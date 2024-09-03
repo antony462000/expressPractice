@@ -1,16 +1,15 @@
 const express = require('express')
-
+const authRouter =  require('./src/auth/router')
 const app =express();
 const PORT = 3000;
 
+app.use(express.json());
+app.use(express.urlencoded({extended:false}))
+app.use('/user', authRouter)
+
 app.listen(PORT,(error) =>{
-    if(!error){
+    if(!error)
         console.log(`Server running at http://localhost:${PORT}/`)
-        return "Hello World"}
     else
     console.log("Error occured,server can't start",error)
-})
-
-app.get('/',(req,res) => {
-    res.send("Hello World")
 })
