@@ -1,9 +1,9 @@
 [
     {
-        "name": "TONY",
-        "password": "tony",
+        "name": "ANTONY",
+        "password": "antony",
         "mob": 122246089,
-        "email": "tony@gmail.com"
+        "email": "antony@gmail.com"
     },
     {
         "name": "TONY",
@@ -12,15 +12,15 @@
         "email": "tony@gmail.com"
     },
     {
-        "name": "TONY",
-        "password": "tony",
+        "name": "SONY",
+        "password": "sony",
         "mob": 122246089,
-        "email": "tony@gmail.com"
+        "email": "sony@gmail.com"
     },
     {
-        "name": "TONY",
-        "password": "tony",
+        "name": "DONY",
+        "password": "dony",
         "mob": 122246089,
-        "email": "tony@gmail.com"
+        "email": "dony@gmail.com"
     }
 ]
