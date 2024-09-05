@@ -1,11 +1,13 @@
 const express = require('express')
-const authRouter =  require('./src/auth/router')
+const authRouter =  require('./src/auth/router');
+const userRouter = require('./src/user/router');
 const app =express();
 const PORT = 3000;
 
 app.use(express.json());
 app.use(express.urlencoded({extended:false}))
-app.use('/user', authRouter)
+app.use('/user', userRouter)
+app.use('/auth',authRouter)
 
 app.listen(PORT,(error) =>{
     if(!error)

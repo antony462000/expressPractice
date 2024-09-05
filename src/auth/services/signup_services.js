@@ -1,5 +1,5 @@
 const fs = require('fs')
-
+const { v4: uuidv4 } = require('uuid');
 module.exports = (profiles) => {
     // try {
     //     
@@ -27,11 +27,13 @@ module.exports = (profiles) => {
 
 
     try {
-
+      
         const isDataExist = fs.readFileSync('db.json', 'utf8').toString()
         let jsonData = isDataExist ? JSON.parse(isDataExist) : []
 
-        profiles.map((_) => jsonData.push(_))
+        profiles.map((_) => {
+            _.id=uuidv4()
+            jsonData.push(_)})
         fs.writeFileSync('db.json', JSON.stringify(jsonData), 'utf8')
 
     } catch (error) {

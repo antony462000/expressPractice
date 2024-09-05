@@ -1,6 +1,29 @@
 {
-  "dependencies": {
-    "script": "sever.js",
-    "express": "^4.19.2"
-  }
+    "name": "express_server",
+    "version": "1.0.0",
+    "description": "Express Server  Initialization",
+    "main": "server.js",
+    "scripts": {
+        "startscript": "nodemon server.js",
+        "test": "test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/antony462000/express_server.git"
+    },
+    "keywords": [
+        "expresssever",
+        "server",
+        "express"
+    ],
+    "author": "antony",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/antony462000/express_server/issues"
+    },
+    "homepage": "https://github.com/antony462000/express_server#readme",
+    "dependencies": {
+        "express": "^4.19.2",
+        "uuid": "^10.0.0"
+    }
 }
