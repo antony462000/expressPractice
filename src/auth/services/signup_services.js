@@ -37,6 +37,7 @@ module.exports = (profiles) => {
         fs.writeFileSync('db.json', JSON.stringify(jsonData), 'utf8')
 
     } catch (error) {
-        console.log(error)
+        throw new Error("ERROR IN SIGNING UP")
+        
     }
 }

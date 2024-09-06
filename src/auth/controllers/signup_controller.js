@@ -5,6 +5,7 @@ module.exports = (req,res) =>{
         var userProfile = signup_services(req.body)
         res.send(userProfile)
     } catch (error) {
-        console.log("ERROR...")
+        res.status(400)
+        res.send(error.message)
     }
 }
